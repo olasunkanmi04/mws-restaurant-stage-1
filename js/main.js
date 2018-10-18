@@ -161,6 +161,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute('alt', 'Restuarant Image')
   li.append(image);
 
   const name = document.createElement('h1');
@@ -209,3 +210,18 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+/* resgister service worker*/
+if (navigator.serviceWorker) {
+  document.addEventListener("DOMContentLoaded", function () {
+    navigator.serviceWorker.register('./service-worker.js').then(function (response) {
+      console.log(response);
+      console.log('Service worker is live');
+    }).catch(function (err) {
+      console.log(err);
+      console.log('Service work is not live');
+    })
+  });
+} else {
+  console.log('Service worker not compactible with your browser');
+}
