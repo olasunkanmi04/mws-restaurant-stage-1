@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-* [How to use](#Howtouse)
+* [How to use](#instructions)
 * [Dependencies](#dependencies)
 * [Authors](#authors)
 * [Acknowledgments](#acknowledgments)
