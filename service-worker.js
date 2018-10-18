@@ -1,27 +1,27 @@
-var staticCacheName = 'restaurant-review-v3';
+var staticCacheName = 'restaurant-review-v4';
 
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(staticCacheName).then(function (cache) {
             return cache.addAll([
-                '/mws-restaurant-stage-1/main.js',
-                '/mws-restaurant-stage-1/restaurant_info.js',
-                '/mws-restaurant-stage-1/dbhelper.js',
-                './mws-restaurant-stage-1/index.html',
-                './mws-restaurant-stage-1/restaurant.html',
-                './mws-restaurant-stage-1/img/1.jpg',
-                './mws-restaurant-stage-1/img/2.jpg',
-                './mws-restaurant-stage-1/img/3.jpg',
-                './mws-restaurant-stage-1/img/4.jpg',
-                './mws-restaurant-stage-1/img/5.jpg',
-                './mws-restaurant-stage-1/img/6.jpg',
-                './mws-restaurant-stage-1/img/7.jpg',
-                './mws-restaurant-stage-1/img/8.jpg',
-                './mws-restaurant-stage-1/img/9.jpg',
-                './mws-restaurant-stage-1/img/10.jpg',
-                './mws-restaurant-stage-1/data/restaurant.json',
-                './mws-restaurant-stage-1/css/style.css',
+                '/main.js',
+                '/restaurant_info.js',
+                '/dbhelper.js',
+                './index.html',
+                './restaurant.html',
+                './img/1.jpg',
+                './img/2.jpg',
+                './img/3.jpg',
+                './img/4.jpg',
+                './img/5.jpg',
+                './img/6.jpg',
+                './img/7.jpg',
+                './img/8.jpg',
+                './img/9.jpg',
+                './img/10.jpg',
+                '/mws-restaurant-stage-1/data/restaurant.json',
+                './css/style.css',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
                 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
                 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon.png',
