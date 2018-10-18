@@ -1,6 +1,6 @@
 # Restaurant Review App
 
-##About
+## About
 
 **Restaurant Reviews** web app, a static webpage converted to mobile-ready web application, accessible for all screen reader, and responsive on different sized displays. Added service worker to begin the process of creating a seamless offline experience for your users.
 
