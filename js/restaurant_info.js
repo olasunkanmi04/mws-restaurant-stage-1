@@ -161,6 +161,7 @@ createReviewHTML = (review) => {
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
   li.appendChild(rating);
+  rating.classList.add('review-rating');
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
