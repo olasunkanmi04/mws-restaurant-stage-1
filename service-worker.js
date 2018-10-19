@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-review-v4';
+var staticCacheName = 'restaurant-review-v1';
 
 
 self.addEventListener('install', function (event) {
@@ -20,7 +20,7 @@ self.addEventListener('install', function (event) {
                 './img/8.jpg',
                 './img/9.jpg',
                 './img/10.jpg',
-                '/mws-restaurant-stage-1/data/restaurant.json',
+                './data/restaurant.json',
                 './css/style.css',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
                 'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
